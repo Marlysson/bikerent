@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BikeRent</title>
+	<link rel="stylesheet" type="text/css" href="static/css/estilo.css">
+</head>
+<body>
+
+	<header>
+		<h1 class="title">BIKE RENT</h1>
+		<h2 class="subtitle">Aluguel de bicicletas</h2>
+
+		<div class="auth">
+			<button class="btn-login">ENTRAR</button>	
+			<span>ou</span>
+			<button class="btn-cadastrar">CADASTRE-SE</button>	
+		</div>
+
+		<div class="box-search">
+			<input type="" placeholder="Bicicleta para passeio" class="input-search">
+			<button class="icon-search"></button>
+		</div>
+	</header>
+
+	<nav class="menu-itens">
+		<ul>
+			<li class="item-menu"><a href="">Meus dados</a>
+			<li class="item-menu"><a href="">Promoções</a></li>
+			<li class="item-menu"><a href="">Informações</a></li>
+			<li class="item-menu"><a href="">Atendimento</a></li>
+		</ul>
+	</nav>	
+
+	<section class="lista-bikes">
+
+		<li class="item-bike">
+			
+			<div class="img_bicicleta">
+					<img src="static/images/bike_aventura.jpeg" class="img">
+			</div>
+
+			<div class="detalhes">
+				
+				<p class="funcao"><span class="descricao">FUNÇÃO:</span> <span class="tipo">aventura</span> </p>
+
+				<div class="valores">
+					<p class="descricao">Diária</p>
+					<p class="preco">R$ 20.00</p>
+				</div>
+
+				<button class="btn">alugar</button>
+			</div>
+		</li>	
+		<li class="item-bike">
+			<div class="detalhes">
+				
+				<p class="funcao"><span class="descricao">FUNÇÃO:</span> <span class="tipo">corrida</span> </p>
+
+				<div class="valores">
+					<p class="descricao">Diária</p>
+					<p class="preco">R$ 10.00</p>
+				</div>
+
+				<button class="btn">alugar</button>
+			</div>
+		</li>	
+
+		<li class="item-bike">
+			<div class="detalhes">
+
+			<p class="funcao"><span class="descricao">FUNÇÃO:</span> <span class="tipo">bmx</span> </p>
+
+				<div class="valores">
+					<p class="descricao">Diária</p>
+					<p class="preco">R$ 25.00</p>
+				</div>
+
+				<button class="btn">alugar</button>
+			</div>
+		</li>	
+		<li class="item-bike">
+			<div class="detalhes">
+
+			<p class="funcao"><span class="descricao">FUNÇÃO:</span> <span class="tipo">Levar carga</span> </p>
+
+				<div class="valores">
+					<p class="descricao">Diária</p>
+					<p class="preco">R$ 35.00</p>
+				</div>
+
+				<button class="btn">alugar</button>
+			</div>
+		</li>	
+		<li class="item-bike">
+			<div class="detalhes">
+
+			<p class="funcao"><span class="descricao">FUNÇÃO:</span> <span class="tipo">triatlon</span> </p>
+
+				<div class="valores">
+					<p class="descricao">Diária</p>
+					<p class="preco">R$ 65.00</p>
+				</div>
+
+				<button class="btn">alugar</button>
+			</div>
+		</li>	
+		<li class="item-bike">
+			<div class="detalhes">
+
+			<p class="funcao"><span class="descricao">FUNÇÃO:</span> <span class="tipo">infantil</span> </p>
+
+				<div class="valores">
+					<p class="descricao">Diária</p>
+					<p class="preco">R$ 15.00</p>
+				</div>
+
+				<button class="btn">alugar</button>
+			</div>
+		</li>
+
+		<li class="item-bike">
+			
+			<div class="detalhes">
+
+				<p class="funcao"><span class="descricao">FUNÇÃO:</span> <span class="tipo">casual</span> </p>
+
+
+
+				<div class="valores">
+					<p class="descricao">Diária</p>
+					<p class="preco">R$ 10.00</p>
+				</div>
+
+				<button class="btn">alugar</button>
+			</div>
+		</li>		
+	</section>
+
+	<footer>
+		<ul class="informacoes">
+			<li><a href="">Regulamento</a></li>
+			<li><a href="">Parceiros</a></li>
+			<li><a href="">O BikeRent - História</a></li>
+		</ul>
+	</footer>
+
+</body>
+
+<script type="text/javascript">
+	
+	search = document.querySelector(".input-search");
+	search.value = "Bicicleta para passeio";
+
+	search.addEventListener("click",function(event){
+		this.value = '';
+	});
+
+	search.addEventListener("change",function(){
+		this.value = 'Bicicleta para passeio';
+	});
+
+	img_bicicleta = document.querySelector('.img_bicicleta');
+	img = img_bicicleta.querySelector('img');
+
+	height = img_bicicleta.offsetHeight;
+	width = img_bicicleta.offsetWidth;
+
+	img.style.width = width;
+	img.style.height = height;
+
+</script>
+</html>
