@@ -11,9 +11,9 @@
 		<h2 class="subtitle">Aluguel de bicicletas</h2>
 
 		<div class="auth">
-			<button class="btn-login">ENTRAR</button>	
-			<span>ou</span>
 			<button class="btn-cadastrar">CADASTRE-SE</button>	
+			<span>ou</span>
+			<button class="btn-login">ENTRAR</button>	
 		</div>
 
 		<div class="box-search">
@@ -24,6 +24,7 @@
 
 	<nav class="menu-itens">
 		<ul>
+			<li class="item-menu"><a href="">Postos de Coleta</a>
 			<li class="item-menu"><a href="">Meus dados</a>
 			<li class="item-menu"><a href="">Promoções</a></li>
 			<li class="item-menu"><a href="">Informações</a></li>
@@ -230,24 +231,5 @@
 
 </body>
 
-<script type="text/javascript">
-	
-	valor_padrao = "Bicicleta para passeio";
-
-	search = document.querySelector(".input-search");
-	search.value = valor_padrao;
-
-	search.addEventListener("click",function(event){
-		if (this.value === valor_padrao){
-			this.value = '';
-		}
-	});
-
-	search.addEventListener("focusout",function(){
-		if (this.value === ''){
-			this.value = 'Bicicleta para passeio';
-		}
-	});
-
-</script>
+<script type="text/javascript" src="static/js/init.js"></script>
 </html>

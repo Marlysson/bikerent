@@ -3,7 +3,10 @@
 	padding:0;
 	box-sizing: border-box;
 	font-family: "Arial",sans-serif;
+}
 
+input , button{
+	outline:none;
 }
 
 header{
@@ -85,23 +88,21 @@ header{
 	position:absolute;
 	bottom:20px;	
 	right:20px;
-	width:320px;
+	width:370px;
 	height:40px;
 	background:black;
 }
 
 .input-search{
-	width:85%;
+	width:88%;
 	height:100%;
 	float:left;
 	padding:0 5px;
 	font-size:17px;
 	transition:0.3s all;
-	outline:none;
 	background:#34495e;
 	color:white;
 	border:1px solid white;
-	/*background:#34495e; deixar com fundo igual ao header*/
 	border-right:0;
 }
 
@@ -112,14 +113,14 @@ header{
 
 .icon-search{
 	border: 0;
-	outline:none;
 	cursor:pointer;
-	width:15%;
+	width:12%;
 	height:100%;
-	background:#e67e22;
+	background:white;
 	float:right;
 	background-image:url("../images/search.svg");
-	background-size:90% 90%;
+	background-size:70% 70%;
+	background-repeat: no-repeat;
 	background-position: center center;
 }
 
@@ -163,8 +164,8 @@ header{
 
 .item-bike{
 	display: inline-block;
-	border-left:1px solid #95a5a6;
-	border-right:1px solid #95a5a6;
+	border-left:1px solid #bdc3c7;
+	border-right:1px solid #bdc3c7;
 	margin-left:20px;
 	margin-bottom:70px;
 	width:270px;
@@ -252,7 +253,6 @@ header{
 	bottom:10px;
 	right:10px;
 	cursor:pointer;
-	outline:none;
 	transition:0.3s all;
 }
 
