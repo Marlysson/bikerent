@@ -252,6 +252,7 @@ header{
 	bottom:10px;
 	right:10px;
 	cursor:pointer;
+	outline:none;
 	transition:0.3s all;
 }
 

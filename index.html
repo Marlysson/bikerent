@@ -232,25 +232,22 @@
 
 <script type="text/javascript">
 	
+	valor_padrao = "Bicicleta para passeio";
+
 	search = document.querySelector(".input-search");
-	search.value = "Bicicleta para passeio";
+	search.value = valor_padrao;
 
 	search.addEventListener("click",function(event){
-		this.value = '';
+		if (this.value === valor_padrao){
+			this.value = '';
+		}
 	});
 
-	search.addEventListener("change",function(){
-		this.value = 'Bicicleta para passeio';
+	search.addEventListener("focusout",function(){
+		if (this.value === ''){
+			this.value = 'Bicicleta para passeio';
+		}
 	});
-
-	img_bicicleta = document.querySelector('.img_bicicleta');
-	img = img_bicicleta.querySelector('img');
-
-	height = img_bicicleta.offsetHeight;
-	width = img_bicicleta.offsetWidth;
-
-	img.style.width = width;
-	img.style.height = height;
 
 </script>
 </html>
