@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>BikeRent</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="static/css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="static/css/responsivo.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css">
+	
 </head>
 <body>
 
@@ -10,7 +16,7 @@
 		<h1 class="title">BIKE RENT</h1>
 		<h2 class="subtitle">Aluguel de bicicletas</h2>
 
-		<div class="auth">
+		<div class="auth-container">
 			<button class="btn-cadastrar">CADASTRE-SE</button>	
 			<span>ou</span>
 			<button class="btn-login">ENTRAR</button>	
@@ -20,7 +26,13 @@
 			<input type="" placeholder="Bicicleta para passeio" class="input-search">
 			<button class="icon-search"></button>
 		</div>
+
 	</header>
+
+	<div class="activate-menu">
+		<!-- <span class="menu-mobile"></span> -->
+		<div data-icon="ei-navicon" data-size="m" class="trigger-mobile"></div>
+	</div>
 
 	<nav class="menu-itens">
 		<ul>
@@ -231,5 +243,7 @@
 
 </body>
 
+<script src="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js"></script>
 <script type="text/javascript" src="static/js/init.js"></script>
+
 </html>

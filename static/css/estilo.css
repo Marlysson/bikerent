@@ -2,7 +2,8 @@
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-	font-family: "Arial",sans-serif;
+	font-family: 'Open Sans', sans-serif;
+
 }
 
 input , button{
@@ -25,30 +26,28 @@ header{
 	color:orange;
 	font-size:50px;
 	letter-spacing: 7px;
-	padding-top:30px;
+	padding-top:25px;
 	text-shadow:2px 3px #fff;
 }
 
 .subtitle{
 	color:white;
-	letter-spacing: 1px;
+	font-size:22px;
+	padding-left:25px;
+	letter-spacing: 2px;
 }
 
-.auth{
+.auth-container{
 	position:absolute;
 	top:15px;
 	right:20px;
-	/*width:150px;
-	height:50%;*/
 }
 
-.auth button{
+.auth-container button{
 	display: inline-block;
 	font-weight: bold;
-	/*width:150px;
-	height:35px;*/
 	padding:7px 12px;
-	font-size:17px;
+	font-size:14px;
 	transition:0.3s all;
 }
 
@@ -76,7 +75,7 @@ header{
 	cursor:pointer;
 }
 
-.auth span{
+.auth-container span{
 	color:white;
 	padding:0 5px;
 	font-size:15px;
@@ -90,7 +89,6 @@ header{
 	right:20px;
 	width:370px;
 	height:40px;
-	background:black;
 }
 
 .input-search{
@@ -98,7 +96,7 @@ header{
 	height:100%;
 	float:left;
 	padding:0 5px;
-	font-size:17px;
+	font-size:15px;
 	transition:0.3s all;
 	background:#34495e;
 	color:white;
@@ -124,9 +122,17 @@ header{
 	background-position: center center;
 }
 
+.activate-menu{
+	background:#34495e;
+	text-align: right;
+	height:50px;
+}
+
+.trigger-mobile{
+	color:white;
+}
+
 .menu-itens ul{
-	margin:0;
-	padding:0;
 	list-style:none;
 	background:#34495e;
 	text-align: center;
@@ -134,7 +140,7 @@ header{
 }
 
 .item-menu{
-	display: inline;
+	display: inline-block;
 	border-right:1px solid #7f8c8d;
 }
 
@@ -148,9 +154,13 @@ header{
 	color:white;
 	text-decoration:none;
 	text-transform: uppercase;
-	font-size:14px;
+	font-size:13px;
 	letter-spacing: 1px;
 	font-weight: bold;
+}
+
+.item-menu a:hover{
+	color:#D2D7D3;
 }
 
 .lista-bikes{
@@ -164,8 +174,8 @@ header{
 
 .item-bike{
 	display: inline-block;
-	border-left:1px solid #bdc3c7;
-	border-right:1px solid #bdc3c7;
+	border:1px solid #bdc3c7;
+	box-shadow:1px 1px #ccc;
 	margin-left:20px;
 	margin-bottom:70px;
 	width:270px;
@@ -265,7 +275,7 @@ footer{
 	bottom:0;
 	left:0;
 	right:0;
-	background:#34495e;
+	background:#2c3e50;
 }
 
 .informacoes{
@@ -284,16 +294,16 @@ footer{
 }
 
 .informacoes li a{
-	padding:10px 15px;
-	color:white;
+	padding:15px;
+	color:#bdc3c7;
 	text-decoration:none;
 	display: inline-block;
 	text-transform: uppercase;
-	font-size:14px;
+	font-size:13px;
 	font-weight: bold;
-	transition:0.2s all;
+	transition:0.3s all;
 }
 
 .informacoes li a:hover{
-	color:#bdc3c7;
+	color:white;
 }
