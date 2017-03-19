@@ -4,7 +4,22 @@
 		text-shadow: none;
 	}
 
+	.menu-itens{
+		margin-bottom:20px;
+		height:0;
+	}
+/*
+	.menu-itens a{
+		display: block;
+	}*/
+}
+
+@media screen and (max-width:600px){
 	.activate-menu{
+		display: block;
+	}
+
+	.item-menu{
 		display: block;
 	}
 }
@@ -26,21 +41,11 @@
 	}
 
 	.box-search{
-		width:90%;
+		width:80%;
 		position: static;
 		margin:0 auto;
 		margin-top:20px;
 		margin-bottom:10px;
 	}
 
-	.menu-itens{
-		margin-bottom:20px;
-		display: block;
-		height: 0;
-		overflow:hidden;
-	}
-
-	.item-menu{
-		display: block;
-	}
 }

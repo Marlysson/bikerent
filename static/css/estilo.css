@@ -123,6 +123,7 @@ header{
 }
 
 .activate-menu{
+	display: none;
 	background:#34495e;
 	text-align: right;
 	height:50px;
@@ -130,6 +131,11 @@ header{
 
 .trigger-mobile{
 	color:white;
+}
+
+.menu-itens{
+	overflow:auto;
+	transition:0.3s all;
 }
 
 .menu-itens ul{

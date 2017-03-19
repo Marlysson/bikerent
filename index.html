@@ -30,7 +30,6 @@
 	</header>
 
 	<div class="activate-menu">
-		<!-- <span class="menu-mobile"></span> -->
 		<div data-icon="ei-navicon" data-size="m" class="trigger-mobile"></div>
 	</div>
 
@@ -246,4 +245,17 @@
 <script src="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js"></script>
 <script type="text/javascript" src="static/js/init.js"></script>
 
+<script type="text/javascript">
+
+	document.querySelector(".activate-menu").addEventListener("click",function(){
+		elemento = document.querySelector(".menu-itens");
+
+		if (elemento.style.height == '100%'){
+			elemento.style.height = '0px';
+		}else{
+			elemento.style.height = '100%';
+		}
+	});
+
+</script>
 </html>
