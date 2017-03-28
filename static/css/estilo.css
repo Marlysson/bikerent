@@ -314,24 +314,24 @@ footer{
 .informacoes li a:hover{
 	color:white;
 }
+a{
+	text-decoration: none;
+}
 
 .detalhe_bicicleta{
 	width:900px;
 	height:380px;
-	/*border:1px solid #ccc;*/
 	margin:0 auto 20px;
 	position:relative;
 }
 
 .img_bicicleta_2{
-	/*float:left;*/
 	width:500px;
 	height:300px;
-	/*border:1px solid #000;*/
 	position:absolute;
 }
 
-.img_bicicleta img{
+.img_bicicleta_2 img{
 	width:100%;
 	height:100%;
 }
