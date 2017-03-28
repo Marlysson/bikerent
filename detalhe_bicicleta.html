@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BikeRent</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="static/css/responsivo.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css">
+	
+</head>
+<body>
+
+	<header>
+		<h1 class="title">BIKE RENT</h1>
+		<h2 class="subtitle">Aluguel de bicicletas</h2>
+
+		<div class="auth-container">
+			<button class="btn-cadastrar">CADASTRE-SE</button>	
+			<span>ou</span>
+			<button class="btn-login">ENTRAR</button>	
+		</div>
+
+		<div class="box-search">
+			<input type="" placeholder="Bicicleta para passeio" class="input-search">
+			<button class="icon-search"></button>
+		</div>
+
+	</header>
+
+	<div class="activate-menu">
+		<div data-icon="ei-navicon" data-size="m" class="trigger-mobile"></div>
+	</div>
+
+	<nav class="menu-itens">
+		<ul>
+			<li class="item-menu"><a href="">Postos de Coleta</a>
+			<li class="item-menu"><a href="">Meus dados</a>
+			<li class="item-menu"><a href="">Promoções</a></li>
+			<li class="item-menu"><a href="">Informações</a></li>
+			<li class="item-menu"><a href="">Atendimento</a></li>
+		</ul>
+	</nav>	
+
+	<div class="detalhe_bicicleta">
+			
+			<div class="img_bicicleta">
+				<img src="static/images/bike_aventura.png">
+			</div>	
+
+			<div class="dados">
+					
+				<strong>TIPO</strong>
+				<p style="padding-bottom:10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+				<strong>PREÇO</strong>
+				<p style="padding-bottom:10px">R$ 20.00</p>
+
+				<strong>DESCRIÇÃO</strong>
+				<p style="padding-bottom:10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+
+				<button class="btn btn-detalhe">ALUGAR</button>
+
+			</div>
+
+	</div>
+
+	<footer>
+		<ul class="informacoes">
+			<li><a href="">Regulamento</a></li>
+			<li><a href="">Parceiros</a></li>
+			<li><a href="">O BikeRent - História</a></li>
+		</ul>
+	</footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js"></script>
+<script type="text/javascript" src="static/js/init.js"></script>
+
+<script type="text/javascript">
+
+	document.querySelector(".activate-menu").addEventListener("click",function(){
+		elemento = document.querySelector(".menu-itens");
+
+		if (elemento.style.height == '100%'){
+			elemento.style.height = '0px';
+		}else{
+			elemento.style.height = '100%';
+		}
+	});
+
+</script>
+</html>
